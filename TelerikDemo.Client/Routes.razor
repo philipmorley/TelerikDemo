@@ -1,0 +1,13 @@
+﻿<Router AppAssembly="typeof(Program).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
+        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <PageTitle>Error 404 ::: Page not found</PageTitle>
+
+        <HeadContent>
+            <meta name="robots" content="noindex" />
+        </HeadContent>
+    </NotFound>
+</Router>
