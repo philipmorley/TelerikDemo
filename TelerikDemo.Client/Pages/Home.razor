@@ -1,14 +1,12 @@
 ﻿@page "/"
 
-Selected time: @selectedTime?.ToLongTimeString()
+Selected time: @selectedTime.ToLongTimeString()
 <br />
 
-<TelerikTimePicker Min="@Min" Max="@Max" Format="hh:mm:ss tt" @bind-Value="@selectedTime"></TelerikTimePicker>
+<TelerikTimePicker Format="HH:mm" @bind-Value="@selectedTime" Enabled="true"></TelerikTimePicker>
 
 @code {
-    private DateTime? selectedTime = DateTime.Now;
 
-    // only the time portions are used
-    public DateTime Min = new DateTime(1900, 1, 1, 8, 15, 0);
-    public DateTime Max = new DateTime(1900, 1, 1, 19, 30, 45);
+    private DateTime selectedTime;
+
 }
