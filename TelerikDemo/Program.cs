@@ -1,4 +1,3 @@
-using TelerikDemo.Client.Pages;
 using TelerikDemo.Components;
 
 var builder = WebApplication.CreateBuilder(args);
